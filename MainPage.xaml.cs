@@ -26,5 +26,9 @@ namespace infokiosk
         {
             this.InitializeComponent();
         }
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+            splitview1.IsPaneOpen = !splitview1.IsPaneOpen;
+        }
     }
 }
