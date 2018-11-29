@@ -9,12 +9,13 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto" MinHeight="237"></RowDefinition>
+            <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <RelativePanel>
+        <RelativePanel Margin="0,0,0,0">
             <StackPanel Name="headblock" Orientation="Horizontal">
 
             </StackPanel>
@@ -23,8 +24,9 @@
             <Button Name="hamburgerButton"
                     RelativePanel.Below="headblock"
                     Click="HamburgerButton_Click"
-                    Margin="0,150,0,0">
-                <SymbolIcon Symbol="GlobalNavigationButton" Height="25" Width="25"></SymbolIcon>
+                    Margin="0,200,0,0"
+                    >
+                <SymbolIcon Symbol="GlobalNavigationButton" Height="25" Width="25" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Top"></SymbolIcon>
             </Button>
 
         </RelativePanel>
@@ -33,11 +35,12 @@
                    IsPaneOpen="False"
                    DisplayMode="CompactInline"
                    CompactPaneLength="45"
-                   Name="splitview1">
+                   Name="splitview1" Margin="0,0,0,0">
             <SplitView.Pane>
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"></RowDefinition>
+
                         <RowDefinition Height="*"></RowDefinition>
                         <RowDefinition Height="Auto"></RowDefinition>
                     </Grid.RowDefinitions>
@@ -85,9 +88,33 @@
                     </ListBox>
                 </Grid>
             </SplitView.Pane>
+            <SplitView.Content>
+                <StackPanel HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch">
+                    <TextBlock>test</TextBlock>
+                </StackPanel>
+            </SplitView.Content>
         </SplitView>
-
-
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="1"></RowDefinition>
+                <RowDefinition ></RowDefinition>
+                <RowDefinition Height="1"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="80"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Row="1" Grid.Column="2" Background="LightGray" BorderBrush="White" BorderThickness="10,20,10,20" Grid.ColumnSpan="4" Margin="10,10,40,47.667" Grid.RowSpan="3"/>
+            <StackPanel Grid.Row="4" Grid.Column="2" Background="LightGray" BorderBrush="White" BorderThickness="10,20,10,20" Grid.ColumnSpan="3" Margin="5,119.333,0,-699.333"/>
+            <StackPanel Grid.Row="4" Grid.Column="2" Background="Aqua" BorderThickness="0,0,0,0" Grid.ColumnSpan="2" Margin="115,170.333,189,-648.333"/>
+            <StackPanel Grid.Row="1" Background="LawnGreen" BorderThickness="0,0,0,0" Grid.ColumnSpan="2" Margin="40,35,199,72.999" Grid.RowSpan="3"/>
+        </Grid>
     </Grid>
 </Page>
 
