@@ -22,7 +22,8 @@
 
             <Button Name="hamburgerButton"
                     RelativePanel.Below="headblock"
-                    Click="HamburgerButton_Click">
+                    Click="HamburgerButton_Click"
+                    Margin="0,150,0,0">
                 <SymbolIcon Symbol="GlobalNavigationButton" Height="25" Width="25"></SymbolIcon>
             </Button>
 
@@ -44,29 +45,41 @@
                     <ListBox>
                         <ListBoxItem>
                             <StackPanel Orientation="Horizontal">
-                                <SymbolIcon Symbol="CalendarDay" Height="25" Width="25"></SymbolIcon>
-                                <TextBlock  Margin="10,0,0,0">Item1</TextBlock>
+                                <SymbolIcon Symbol="Home" Height="25" Width="25"></SymbolIcon>
+                                <TextBlock  Margin="10,0,0,0">Pealeht</TextBlock>
                             </StackPanel>
                         </ListBoxItem>
 
                         <ListBoxItem>
                             <StackPanel Orientation="Horizontal">
-                                <SymbolIcon Symbol="Bookmarks" Height="25" Width="25"></SymbolIcon>
-                                <TextBlock  Margin="10,0,0,0">Item2</TextBlock>
+                                <SymbolIcon Symbol="CalendarWeek" Height="25" Width="25"></SymbolIcon>
+                                <TextBlock  Margin="10,0,0,0">Tunniplaan</TextBlock>
                             </StackPanel>
                         </ListBoxItem>
 
                         <ListBoxItem>
                             <StackPanel Orientation="Horizontal">
-                                <SymbolIcon Symbol="MusicInfo" Height="25" Width="25"></SymbolIcon>
-                                <TextBlock  Margin="10,0,0,0">Item3</TextBlock>
+                                <SymbolIcon Symbol="Clock" Height="25" Width="25"></SymbolIcon>
+                                <TextBlock  Margin="10,0,0,0">Sööklamenüü</TextBlock>
                             </StackPanel>
                         </ListBoxItem>
 
                         <ListBoxItem>
                             <StackPanel Orientation="Horizontal">
-                                <SymbolIcon Symbol="AddFriend" Height="25" Width="25"></SymbolIcon>
-                                <TextBlock Margin="10,0,0,0">Item4</TextBlock>
+                                <SymbolIcon Symbol="Bold" Height="25" Width="25"></SymbolIcon>
+                                <TextBlock Margin="10,0,0,0">Bussiajad</TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel Orientation="Horizontal">
+                                <SymbolIcon Symbol="ContactInfo" Height="25" Width="25"></SymbolIcon>
+                                <TextBlock Margin="10,0,0,0">Kontakt</TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            <StackPanel Orientation="Horizontal">
+                                <SymbolIcon Symbol="PreviewLink" Height="25" Width="25"></SymbolIcon>
+                                <TextBlock Margin="10,0,0,0">Bussiajad</TextBlock>
                             </StackPanel>
                         </ListBoxItem>
                     </ListBox>
